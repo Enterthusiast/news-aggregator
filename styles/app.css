@@ -68,6 +68,7 @@ a {
   padding: 0 0 0 72px;
   z-index: 1;
   position: fixed;
+  will-change: transform;
 }
 
 .header__title-wrapper {
@@ -92,6 +93,7 @@ a {
   opacity: 0.54;
 }
 
+/*
 body.details-active .story__title,
 body.details-active .story__by,
 body.details-active .story__score {
@@ -102,10 +104,12 @@ body.details-active .story__score {
 body.details-active .story {
   background: linear-gradient(to bottom, #FFF 0%, #FFF 100%);
 }
+*/
 
 body.raised .header {
+  font-size: 30px;
+  height: 86px;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16),
-      0px 2px 5px 0px rgba(0, 0, 0, 0.23);
 }
 
 main {
@@ -151,6 +155,7 @@ main.loading {
   min-height: 90px;
   cursor: pointer;
   transition: all 0.4s ease-out;
+  /*will-change: transform;*/
 }
 
 .story:after {
@@ -198,10 +203,7 @@ main.loading {
   text-align: center;
   line-height: 40px;
 
-  box-shadow:
-      0px 2px 5px 0px rgba(0, 0, 0, 0.06),
-      0px 2px 5px 0px rgba(0, 0, 0, 0.08),
-      0px 2px 7px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.10);
 }
 
 .story-details {
@@ -232,19 +234,16 @@ main.loading {
   height: 100%;
   background: white;
   z-index: 2;
-  box-shadow:
-      0px 2px 5px 0px rgba(0, 0, 0, 0.06),
-      0px 2px 5px 0px rgba(0, 0, 0, 0.08),
-      0px 2px 7px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.10);
 
   overflow: hidden;
   transition: opacity 0.3s ease-out;
 }
 
-.story-details * {
+/*.story-details * {
   will-change: transform;
   transform: translateZ(0);
-}
+}*/
 
 .story-details__content {
   -webkit-flex: 1;
@@ -347,6 +346,10 @@ footer {
   color: #888;
   text-align: center;
   line-height: 40px;
+  will-change: transform;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 footer a {
