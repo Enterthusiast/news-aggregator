@@ -208,16 +208,15 @@ APP.Main = (function() {
     var mainPosition = main.getBoundingClientRect();
     var target = mainPosition.width + 100;
 
-    // //document.body.classList.remove('details-active');
-    // //storyDetails.style.opacity = 0;
+    //document.body.classList.remove('details-active');
+    //storyDetails.style.opacity = 0;
 
     // /* FLIP TEST */
     // // Get the first position.
     // var first = storyDetails.getBoundingClientRect();
 
     // // Now set the element to the last position.
-    // //el.classList.add('totes-at-the-end');
-    // storyDetails.style.transform = 'translateX(' + target + 'px)';
+    // storyDetails.style.left = target + 'px';
 
     // // Read again. This forces a sync layout, so be careful.
     // var last = storyDetails.getBoundingClientRect();
@@ -228,18 +227,16 @@ APP.Main = (function() {
     // var invert =  first.left - last.left;
 
     // // Invert.
-    // storyDetails.style.transform = '';
+    // storyDetails.style.transform = 'translateX(' + invert + 'px)';
 
     // // Wait for the next frame so we know all the style changes have taken hold.
     // requestAnimationFrame(function() {
 
     //   // Switch on animations.
-    //   //el.classList.add('animate-on-transforms');
     //   storyDetails.style.transition = '2s';
-    //   //storyDetails.style.transform = 'translateX(' + target + 'px)';
 
     //   // GO GO GOOOOOO!
-    //   storyDetails.style.transform = 'translateX(' + target + 'px)';
+    //   storyDetails.style.transform = '';
     // });
 
     // // Capture the end with transitionend
